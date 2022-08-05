@@ -22,7 +22,7 @@ navigator.mediaDevices.getUserMedia({
 
 function addVideoStream(video,stream){
     video.srcObject = stream
-    video.addEventListner("loadedMetaData",()=>{
+    video.addEventListner("loadedmetadata",()=>{
         video.play()
         $("#video_grid").append(video)
     })
